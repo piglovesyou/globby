@@ -274,6 +274,8 @@ test('xxx', async () => {
 		gitignore: true
 	});
 	t.true(barJs.endsWith('bar.js'));
+
+
 });
 
 test('respects gitignore option true - sync', t => {

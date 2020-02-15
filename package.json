@@ -15,7 +15,7 @@
 	},
 	"scripts": {
 		"bench": "npm update glob-stream fast-glob && matcha bench.js",
-		"test": "xo && ava && tsd"
+		"test": "ava && tsd"
 	},
 	"files": [
 		"index.js",

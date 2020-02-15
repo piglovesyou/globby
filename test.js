@@ -267,15 +267,13 @@ test('respects gitignore option true - async', async t => {
 	t.false(actual.includes('node_modules'));
 });
 
-test('xxx', async () => {
+test('xxx', async t => {
 	const [barJs] = await globby('fixtures/gitignore/**', {
 		cwd: process.cwd(),
 		absolute: true,
 		gitignore: true
 	});
 	t.true(barJs.endsWith('bar.js'));
-
-
 });
 
 test('respects gitignore option true - sync', t => {
